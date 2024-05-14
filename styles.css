@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Media query exacta
+@media screen and (width: 1000px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+} */
+
+
+
+/* min y max - Aplicará a todas las resoluciones que cumplan con estar dentro de los */
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+        background-color: aquamarine;
+    }
+    .content {
+        padding: 10px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        font-size: 24px;
+        padding: 20px;
+        background-color: blueviolet;
+        color: white
+    }
+    .content {
+        padding: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        font-size: 28px;
+        padding: 25px;
+        background-color: darkcyan;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+    .content p {
+        margin-bottom: 12px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header {
+        font-size: 32px;
+        padding: 30px;
+        background-color: darkorange;
+    }
+    header h1 {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .content {
+        padding: 30px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+        background-color: rgb(255, 184, 97);
+    }
+}
