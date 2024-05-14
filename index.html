@@ -10,12 +10,63 @@
         <header>
             <h1>¡Bienvenido al Workshop de Media Queries!</h1>
         </header>
-        <section class="content">
+
+        <main>
+            <section>
+                <h2>¿Qué son las Media Queries?</h2>
+                <p>
+                    Las Media Queries son una técnica de CSS que nos permite
+                    aplicar estilos dependiendo de ciertas características del
+                    dispositivo en el que se está visualizando la página.
+                </p>
+            </section>
+
+            <section>
+                <h2>¿Por qué son importantes?</h2>
+                <p>
+                    Las Media Queries son importantes porque nos permiten
+                    adaptar nuestra página web a diferentes dispositivos y
+                    tamaños de pantalla. Esto es fundamental para que nuestra
+                    página se vea bien en cualquier dispositivo.
+                </p>
+            </section>
+
+            <section>
+                <h2>¿Cómo se usan?</h2>
+                <p>
+                    Las Media Queries se usan en CSS con la regla{' '}
+                    <code>@media</code>. Dentro de esta regla, podemos
+                    especificar diferentes características del dispositivo en el
+                    que se está visualizando la página, como el ancho de la
+                    pantalla, la orientación del dispositivo, la densidad de
+                    píxeles, etc.
+                </p>
+            </section>
+
+            <section>
+                <h2>Ejemplo</h2>
+                <p>
+                    Por ejemplo, si queremos que un texto sea de color rojo en
+                    pantallas con un ancho de 600px o más, podemos hacerlo de la
+                    siguiente manera:
+                </p>
+                <pre>
+                    <code>
+                        {`@media (min-width: 600px) {
+    p {
+        color: red;
+    }
+}`}
+                    </code>
+                </pre>
+            </section>
+        </main>
+
+        <footer>
             <p>
-                Este es un ejemplo de cómo usar Media Queries para hacer que un
-                sitio web sea responsive.
+                ¡Espero que este workshop te haya sido de ayuda! Si tienes
+                alguna duda, no dudes en contactarme.
             </p>
-            <button class="btn">¡Haz clic aquí!</button>
-        </section>
+        </footer>
     </body>
 </html>
